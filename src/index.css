@@ -1,0 +1,541 @@
+:root {
+  --primary-color: #f9f7f5;
+  --secondary-color: #b0774a;
+  --third-color: #ccad95;
+  --fourth-color: #6a6b6a;
+  --border-color: rgba(128, 128, 128, 0.621);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  /* height: 10vw; */
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5vw 3.5vw 1.5vw 3vw;
+  position: fixed;
+  z-index: 10;
+}
+.nav-right {
+  width: 25%;
+  height: auto;
+}
+.nav-left-circle {
+  width: 4vw;
+  height: 4vw;
+  background-color: #e8e7e6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-left {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  font-weight: 100;
+}
+
+.overlay {
+  width: 100%;
+  height: 34.5vw;
+  position: fixed;
+  top: 105.2px;
+  background-color: var(--primary-color);
+  display: flex;
+  padding: 0vw 13vw;
+  justify-content: space-between;
+  border-top: 1px solid var(--fourth-color);
+  overflow-y: scroll;
+  z-index: 10;
+}
+.overlay-right {
+  height: 120%;
+  border-right: 1px solid var(--fourth-color);
+  padding: 7vw 0;
+  flex-basis: 70%;
+}
+
+.overlay-right > h2 {
+  line-height: 7vw;
+  color: var(--fourth-color);
+  font-size: 3vw;
+  font-weight: 200;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.overlay-right > h2:nth-child(3) {
+  line-height: 4.5vw;
+}
+
+.overlay-right > h2:hover,
+.overlay-left > p:hover {
+  color: var(--secondary-color);
+}
+.overlay-left {
+  padding: 7vw 0vw;
+}
+.overlay-left > h4 {
+  color: var(--third-color);
+  padding: 1.5vw 0;
+}
+.overlay-left > p {
+  line-height: 3vw;
+  color: black;
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+
+.overlay-left-icon {
+  display: flex;
+  gap: 2vw;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+.sec1-L {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://www.cherryinvestments.eu/portal-img/home_top/1/image11b-copy.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.sec1-L::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(53, 53, 53, 0.12),
+    rgba(47, 46, 46, 0.35) 37.4%,
+    rgba(50, 50, 50, 0.48)
+  );
+  z-index: 1;
+}
+
+.sec1-cont {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.sec1-cont > h2 {
+  font-size: 3.9vw;
+  color: white;
+  font-weight: 500;
+}
+.sec1-cont > h2:nth-of-type(1),
+.sec1-cont > h2:nth-of-type(3) {
+  padding-left: 5vw;
+}
+
+.sec2-L {
+  width: 100%;
+  height: 80vh;
+  background-color: var(--primary-color);
+  padding: 11vw;
+  text-align: center;
+}
+.sec2-L > p {
+  width: 90%;
+  padding-left: 10vw;
+  line-height: 2vw;
+  font-size: 1.5vw;
+}
+/* .sec2-L>p:nth-of-type(2){
+    line-height: 2vw;
+} */
+
+.sec3-L {
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  color: rgba(0, 0, 0, 0.765);
+  padding-bottom: 3vw;
+}
+.sec3-L-right {
+  height: 45vw;
+  background-image: url(https://www.cherryinvestments.eu/portal-img/home_top/1/x1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  flex-basis: 45%;
+}
+.sec3-L-left {
+  flex-basis: 40%;
+}
+.sec3-L-left > h2 {
+  font-size: 4vw;
+  font-weight: 200;
+}
+.sec3-L-left > p {
+  font-size: 1.5vw;
+}
+.sec3-L-left > p:nth-of-type(2) {
+  padding-top: 2vw;
+}
+.sec3-L-left > p:nth-of-type(3) {
+  padding-top: 1vw;
+}
+
+.sec3-round {
+  display: flex;
+  gap: 2vw;
+  position: relative;
+}
+.sec3-round > h3 {
+    padding-top: 4vw;
+    font-size: 3vw;
+    font-weight: 200;
+  }
+.sec3-round1 {
+  margin-top: 4vw;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: var(--secondary-color);
+  
+}
+.sec3-round1 > i {
+  position: absolute;
+  top: 70%;
+  left: 39%;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
+  font-weight: 100;
+  color: white;
+}
+.sec4-L {
+  width: 100%;
+  height: 50vw;
+  background-image: url("../public/images/g4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sec5-L {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 4vw;
+  cursor: pointer;
+}
+.sec5-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec5-L-left > h2 {
+  padding-top: 5vw;
+  font-size: 4vw;
+  font-weight: 500;
+}
+.sec5-L-left > h2:nth-of-type(2) {
+  padding-left: 7vw;
+  padding-top: 0;
+}
+.sec5-L-cont .sec5-L-cont-head {
+  display: flex;
+  gap: 18vw;
+  padding-top: 5vw;
+  padding-bottom: 2.5vw;
+  border-bottom: 1px solid var(--border-color);
+}
+.sec5-L-cont-head > p {
+  font-size: 1.2vw;
+}
+.sec5-L-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  padding: 4vw 0;
+  font-size: 22px;
+  border-bottom: 1px solid var(--border-color);
+  transition: 0.3s ease-in-out;
+}
+.sec5-L-box:hover{
+    color: var(--secondary-color);
+}
+.sec5-L-box > p:nth-of-type(1) {
+  width: 27%;
+}
+.sec5-L-box > p:nth-of-type(2) {
+  width: 27%;
+}
+.sec5-L-box > p:nth-of-type(3) {
+  width: 22%;
+}
+.sec5-btn {
+  margin-left: 4vw;
+  padding: 0.7vw 1.2vw 0.7vw 1.2vw;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid var(--fourth-color);
+  background: transparent;
+  transition: 0.5s ease-in-out;
+}
+.sec5-btn:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+.sec5-btm {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+  padding: 5vw 0 0;
+  position: relative;
+}
+.sec5-btm1 > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+.sec5-btm2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: var(--secondary-color);
+}
+.sec5-btm2 > i {
+  position: absolute;
+  top: 75%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2vw;
+  font-weight: 100;
+}
+.sec6-L {
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  gap: 10vw;
+  padding: 4vw;
+  padding-bottom: 15vw;
+}
+.sec6-L-left > h2 {
+  font-size: 5.5vw;
+  flex-basis: 40%;
+  font-weight: 600;
+}
+.sec6-L-left > p {
+  font-size: 2.5vw;
+}
+.sec6-L-left > p:nth-of-type(1) {
+  padding-top: 2vw;
+}
+.sec6-L-right {
+  display: flex;
+}
+.sec6-L-right1 {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  background-color: aqua;
+  background-image: url(https://www.cherryinvestments.eu/portal-img/numbers_images/1/8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sec6-L-right1 > h2 {
+  padding: 17vw 3vw 0;
+  font-size: 4vw;
+}
+.sec6-L-right1 > p {
+  padding: 2vw 3vw 0;
+  line-height: 0.1em;
+  font-size: 1.5vw;
+}
+.sec6-L-right2 {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  background-color: bisque;
+  background-image: url(https://www.cherryinvestments.eu/portal-img/numbers_images/1/image39.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sec6-L-right2 > h2 {
+  padding: 17vw 3vw 0;
+  font-size: 4vw;
+}
+.sec6-L-right2 > p {
+  padding: 1vw 3vw 0;
+  font-size: 1.5vw;
+}
+
+.sec6-L-right3 {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  background-color: blueviolet;
+  background-image: url(https://www.cherryinvestments.eu/portal-img/numbers_images/1/frame2-YG0pM.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sec6-L-right3 > h2 {
+  padding: 17vw 3vw 0;
+  font-size: 4vw;
+}
+.sec6-L-right3 > p {
+  padding: 1vw 3vw 0;
+  font-size: 1.5vw;
+}
+.sec7-L {
+  width: 100%;
+  height: 50vw;
+  background-image: url(https://www.cherryinvestments.eu/portal-img/big_image/1/b-2-copy.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sec8-L {
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 5vw 0 1vw;
+  background-color: var(--primary-color);
+}
+.sec8-L-1 {
+  width: 20vw;
+  height: 20vw;
+  background-image: url(https://www.cherryinvestments.eu/portal-img/invest_images_grid/1/3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin-left: 5vw;
+}
+.sec8-L-2 {
+  width: 20vw;
+  height: 20vw;
+  background-image: url(https://www.cherryinvestments.eu/portal-img/invest_images_grid/1/8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+.sec9-L {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 5vw;
+  text-align: center;
+}
+.sec9-cont > h3 {
+  text-transform: uppercase;
+  font-size: 4vw;
+  padding-bottom: 2vw;
+  font-weight: 500;
+}
+.sec9-cont > p {
+  font-size: 2vw;
+}
+.sec9-btm {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4vw;
+  cursor: pointer;
+}
+.sec9-btm1 > p {
+  font-size: 2.5vw;
+}
+.sec9-btm2 {
+  width: 5vw;
+  height: 5vw;
+  background-color: var(--secondary-color);
+  border-radius: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec9-btm2>i{
+    color: white;
+    font-size: 2vw;
+}
+.sec10-L{
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15vw;
+}
+.sec10-left{
+    width: 20vw;
+    height: 20vw;
+    background-image: url(https://www.cherryinvestments.eu/portal-img/invest_images_grid/1/kataloghos1-kQIuw.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.sec10-right{
+    width: 20vw;
+    height: 20vw;
+    background-image: url(https://www.cherryinvestments.eu/portal-img/invest_images_grid/1/renders-6-page-0001.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-right: 10vw;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--third-color);
+    padding-bottom: 5vw;
+}
+.footer-head{
+    padding: 4vw;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.footer-head>h2{
+    font-size: 3vw;
+    color: white;
+    padding-right: 4vw;
+}
+.fotter-btm{
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw;
+    color: white;
+}
+.btm>p{
+    font-size: 1.2em;
+}
+.footer-icon{
+    padding-left: 5vw;
+    display: flex;
+    gap: 2vw;
+    cursor: pointer;
+}
+.footer-icon>i{
+    font-size: 2vw;
+    color: white;
+}
