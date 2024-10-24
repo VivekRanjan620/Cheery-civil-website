@@ -6,10 +6,10 @@ function Footer() {
     <footer>
        <div className="footer-head">
         <img src="https://www.cherryinvestments.eu/cherry/img/cherry-white.svg" alt="" />
-        <h2>INQUIRE TODAY</h2>
+        <h2>INQUIRE TODAY <i className="ri-arrow-right-down-line"></i></h2>
        </div>
        <div className="fotter-btm">
-        <div className=" btm btm1">
+        <div className=" btm btm1 btm11">
             <p>Communication</p>
             <p>Tel : +302310 222 905</p>
             <p>Email : info@cherryinvestments.eu</p>

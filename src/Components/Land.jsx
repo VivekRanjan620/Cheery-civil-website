@@ -156,26 +156,38 @@ function Land() {
           </div>
         </div>
         <div className="sec7-L"></div>
-      <div className="sec8-L">
-        <div className="sec8-L-1"></div>
-        <div className="sec8-L-2"></div>
-      </div>
-      <div className="sec9-L">
-        <div className="sec9-cont">
-        <h3>Invest in Us.</h3>
-        <p>The company's specialization in investments in the real estate sector, in"</p>
-        <p>combined with its extensive experience in the construction sectors and</p>
-        <p>of real estate services, constitute a strong guarantee of success.</p>
-      </div>
-      <div className="sec9-btm">
-        <div className="sec9-btm1"><p>Support our investments</p></div>
-        <div className="sec9-btm2"><i className="ri-arrow-right-up-line"></i></div>
-      </div>
-      </div>
-     <div className="sec10-L">
-        <div className="sec10-left"></div>
-        <div className="sec10-right"></div>
-     </div>
+        <div className="sec8-L">
+          <div className="sec8-L-1"></div>
+          <div className="sec8-L-2"></div>
+        </div>
+        <div className="sec9-L">
+          <div className="sec9-cont">
+            <h3>Invest in Us.</h3>
+            <p>
+              The company's specialization in investments in the real estate
+              sector, in"
+            </p>
+            <p>
+              combined with its extensive experience in the construction sectors
+              and
+            </p>
+            <p>
+              of real estate services, constitute a strong guarantee of success.
+            </p>
+          </div>
+          <div className="sec9-btm">
+            <div className="sec9-btm1">
+              <p>Support our investments</p>
+            </div>
+            <div className="sec9-btm2">
+              <i className="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+        <div className="sec10-L">
+          <div className="sec10-left"></div>
+          <div className="sec10-right"></div>
+        </div>
       </div>
     </>
   );

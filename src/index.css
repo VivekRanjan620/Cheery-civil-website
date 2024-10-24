@@ -12,8 +12,7 @@
 }
 
 .navbar {
-  width: 100%;
-  /* height: 10vw; */
+  width: 100vw;
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
@@ -44,7 +43,7 @@
 }
 
 .overlay {
-  width: 100%;
+  width: 100vw;
   height: 34.5vw;
   position: fixed;
   top: 105.2px;
@@ -93,7 +92,6 @@
   cursor: pointer;
   font-size: 1.5vw;
 }
-
 .overlay-left-icon {
   display: flex;
   gap: 2vw;
@@ -101,7 +99,7 @@
   cursor: pointer;
 }
 
-.sec1-L {
+.sec1-L{
   width: 100%;
   height: 100vh;
   background-image: url(https://www.cherryinvestments.eu/portal-img/home_top/1/image11b-copy.jpg);
@@ -179,47 +177,45 @@
   border-radius: 15px;
   flex-basis: 45%;
 }
-.sec3-L-left {
+.sec3-L-left{
   flex-basis: 40%;
 }
-.sec3-L-left > h2 {
+.sec3-L-left>h2 {
   font-size: 4vw;
   font-weight: 200;
 }
-.sec3-L-left > p {
+.sec3-L-left>p{
   font-size: 1.5vw;
 }
-.sec3-L-left > p:nth-of-type(2) {
+.sec3-L-left>p:nth-of-type(2) {
   padding-top: 2vw;
 }
-.sec3-L-left > p:nth-of-type(3) {
+.sec3-L-left>p:nth-of-type(3) {
   padding-top: 1vw;
 }
-
-.sec3-round {
+.sec3-round{
   display: flex;
   gap: 2vw;
   position: relative;
 }
-.sec3-round > h3 {
-    padding-top: 4vw;
-    font-size: 3vw;
-    font-weight: 200;
-  }
+.sec3-round>h3 {
+  padding-top: 4vw;
+  font-size: 3vw;
+  font-weight: 200;
+}
 .sec3-round1 {
   margin-top: 4vw;
   width: 60px;
   height: 60px;
   border-radius: 50px;
   background-color: var(--secondary-color);
-  
 }
-.sec3-round1 > i {
+.sec3-round1>i{
   position: absolute;
-  top: 70%;
+  top: 72%;
   left: 39%;
   transform: translate(-50%, -50%);
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: 100;
   color: white;
 }
@@ -271,8 +267,8 @@
   border-bottom: 1px solid var(--border-color);
   transition: 0.3s ease-in-out;
 }
-.sec5-L-box:hover{
-    color: var(--secondary-color);
+.sec5-L-box:hover {
+  color: var(--secondary-color);
 }
 .sec5-L-box > p:nth-of-type(1) {
   width: 27%;
@@ -292,9 +288,9 @@
   background: transparent;
   transition: 0.5s ease-in-out;
 }
-.sec5-btn:hover{
-    background-color: var(--secondary-color);
-    color: white;
+.sec5-btn:hover {
+  background-color: var(--secondary-color);
+  color: white;
 }
 .sec5-btm {
   display: flex;
@@ -357,14 +353,23 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.sec6-L-right1 > h2 {
+.sec6-L-right1 > h2,
+.sec6-L-right2 > h2,
+.sec6-L-right3 > h2 {
   padding: 17vw 3vw 0;
   font-size: 4vw;
 }
-.sec6-L-right1 > p {
+.sec6-L-right1 > p,
+.sec6-L-right2 > p,
+.sec6-L-right3 > p {
   padding: 2vw 3vw 0;
   line-height: 0.1em;
   font-size: 1.5vw;
+}
+.sec6-L-right2 > p,
+.sec6-L-right3 > p {
+  padding-top: 1vw;
+  line-height: 2vw;
 }
 .sec6-L-right2 {
   width: 15vw;
@@ -375,14 +380,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-.sec6-L-right2 > h2 {
-  padding: 17vw 3vw 0;
-  font-size: 4vw;
-}
-.sec6-L-right2 > p {
-  padding: 1vw 3vw 0;
-  font-size: 1.5vw;
 }
 
 .sec6-L-right3 {
@@ -395,14 +392,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.sec6-L-right3 > h2 {
-  padding: 17vw 3vw 0;
-  font-size: 4vw;
-}
-.sec6-L-right3 > p {
-  padding: 1vw 3vw 0;
-  font-size: 1.5vw;
-}
+
 .sec7-L {
   width: 100%;
   height: 50vw;
@@ -472,70 +462,332 @@
   justify-content: center;
   align-items: center;
 }
-.sec9-btm2>i{
-    color: white;
-    font-size: 2vw;
+.sec9-btm2 > i {
+  color: white;
+  font-size: 2vw;
 }
-.sec10-L{
-    width: 100%;
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 15vw;
+.sec10-L {
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15vw;
 }
-.sec10-left{
-    width: 20vw;
-    height: 20vw;
-    background-image: url(https://www.cherryinvestments.eu/portal-img/invest_images_grid/1/kataloghos1-kQIuw.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px;
+.sec10-left {
+  width: 20vw;
+  height: 20vw;
+  background-image: url(https://www.cherryinvestments.eu/portal-img/invest_images_grid/1/kataloghos1-kQIuw.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
 }
-.sec10-right{
-    width: 20vw;
-    height: 20vw;
-    background-image: url(https://www.cherryinvestments.eu/portal-img/invest_images_grid/1/renders-6-page-0001.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    margin-right: 10vw;
+.sec10-right {
+  width: 20vw;
+  height: 20vw;
+  background-image: url(https://www.cherryinvestments.eu/portal-img/invest_images_grid/1/renders-6-page-0001.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin-right: 10vw;
 }
 
-footer{
-    width: 100%;
-    background-color: var(--third-color);
-    padding-bottom: 5vw;
+footer {
+  width: 100%;
+  background-color: var(--third-color);
+  padding-bottom: 5vw;
 }
+.footer-head {
+  padding: 4vw;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+.footer-head>h2 {
+  font-size: 3vw;
+  color: white;
+  padding-right: 4vw;
+}
+.fotter-btm {
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw;
+  color: white;
+}
+.btm >p{
+  font-size: 1.2em;
+}
+.footer-icon {
+  padding-left: 5vw;
+  display: flex;
+  gap: 2vw;
+  cursor: pointer;
+}
+.footer-icon > i {
+  font-size: 2vw;
+  color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 575px) {
+  .navbar {
+    padding: 4vw 3.5vw 4vw 3vw;
+  }
+  .nav-right > img {
+    width: 38vw;
+  }
+  .nav-left-circle {
+    width: 12vw;
+    height: 12vw;
+  }
+  .overlay {
+    flex-direction: column;
+    height: 65vw;
+    top: 70px;
+    padding: 0vw 1vw;
+  }
+  .overlay-right {
+    border-bottom: 1px solid var(--fourth-color);
+    border-right: none;
+  }
+  .overlay-right > h2 {
+    font-size: 4.2vw;
+  }
+  .overlay-left {
+    padding: 3vw 0vw;
+  }
+  .overlay-left > h4 {
+    padding: 2.5vw 0;
+    font-size: 4vw;
+  }
+  .overlay-left > p {
+    line-height: 5vw;
+    font-size: 3.5vw;
+  }
+  .overlay-left > p:nth-of-type(3),
+  .overlay-left > p:nth-of-type(5) {
+    padding-bottom: 2.5vw;
+    border-bottom: 1px solid var(--fourth-color);
+  }
+  .overlay-left-icon {
+    font-size: 3.8vw;
+  }
+  .sec1-L{
+    height: 80vh;
+  }
+  .sec1-cont {
+    top: 55%;
+    left: 50%;
+    padding-left: 8vw;
+  }
+  .sec1-cont > h2 {
+    width: 100vw;
+    font-size: 2.4em;
+    padding-left: 15vw;
+  }
+  .sec2-L {
+    width: 100%;
+    height: 45vh;
+  }
+  .sec2-L > h4 {
+    font-size: 2em;
+    padding-bottom: 5vw;
+  }
+  .sec2-L>p{
+    width: 100%;
+    padding-left: 1vw;
+    line-height: normal;
+    font-size: 1.1em;
+  }
+  .sec3-L {
+    flex-direction: column;
+    height: 130vh;
+  }
+  .sec3-L-right{
+    height: 20vh;
+  }
+  .sec3-L-left>h2 {
+    font-size: 8vw;
+  }
+  .sec3-L-left{
+    padding-left: 6vw;
+    padding-top: 20vw;
+  }
+  .sec3-L-left>p:nth-of-type(1){
+    font-size: 5vw;
+    padding-bottom: 2vw;
+  }
+  .sec3-L-left>p{
+    font-size: 6vw;
+  }
+  .sec3-round>h3 {
+    padding: 10vw 0;
+    font-size: 7vw;
+  }
+  .sec3-round {
+    gap: 5vw;
+  }
+  .sec3-round1 {
+    margin-top: 9vw;
+    width: 45px;
+    height: 45px;
+  }
+  .sec3-round1>i{
+    top: 53%;
+    font-size: 7vw;
+  }
+  
+  .sec5-L-left>h2 {
+    padding-top: 2em;
+    font-size: 9vw;
+  }
+  .sec5-L-left > h2:nth-of-type(2) {
+    padding-left: 15vw;
+    padding-bottom: 2em;
+  }
+  .sec5-L-cont-head > p:nth-of-type(2),
+  .sec5-L-cont-head > p:nth-of-type(3) {
+    display: none;
+  }
+  .sec5-L-cont-head > p {
+    font-size: 1em;
+  }
+  .sec5-L-box > p:nth-of-type(2),
+  .sec5-L-box > p:nth-of-type(3) {
+    display: none;
+  }
+  .sec5-L-box {
+    font-size: 1em;
+  }
+  .sec5-btn {
+    margin-left: 7vw;
+    padding: 1.7vw 1.3vw 1.7vw 1.3vw;
+    font-size: 3vw;
+  }
+  .sec5-L-box > p:nth-of-type(1) {
+    width: 50%;
+  }
+  .sec5-btm1 > p {
+    font-size: 1.3em;
+  }
+  .sec5-btm2 {
+    width: 50px;
+    height: 50px;
+  }
+  .sec5-btm2 > i {
+    top: 60%;
+    left: 80%;
+    font-size: 7vw;
+  }
+  .sec6-L {
+    padding-top: 20vw;
+    padding-bottom: 25vw;
+    flex-direction: column;
+  }
+  .sec6-L-left > h2 {
+    font-size: 2.8em;
+  }
+  .sec6-L-left > p {
+    font-size: 5.5vw;
+  }
+  .sec6-L-right {
+    flex-direction: column;
+    gap: 15vw;
+  }
+  .sec6-L-right1,
+  .sec6-L-right2,
+  .sec6-L-right3 {
+    width: 45vw;
+    height: 45vw;
+  }
+  .sec6-L-right1 > h2,
+  .sec6-L-right2 > h2,
+  .sec6-L-right3 > h2 {
+    padding: 12vw 0vw 0 53vw;
+    font-size: 9vw;
+  }
+  .sec6-L-right1 > p,
+  .sec6-L-right2 > p,
+  .sec6-L-right3 > p {
+    padding: 2vw 0vw 0 53vw;
+    line-height: 1em;
+    font-size: 5vw;
+  }
+  .sec7-L {
+    margin-bottom: 8vw;
+  }
+  .sec8-L-1,
+  .sec8-L-2,
+  .sec10-left,
+  .sec10-right {
+    width: 30vw;
+    height: 30vw;
+    margin-left: 0;
+  }
+  .sec8-L-2 {
+    margin-top: 7vw;
+  }
+
+  .sec10-left,
+  .sec10-right {
+    margin-top: 15vw;
+  }
+  .sec10-left {
+    margin-left: 5vw;
+  }
+  .sec10-right {
+    margin: 0;
+    margin-top: 25vw;
+  }
+  .sec9-cont > h3 {
+    padding-top: 8vw;
+    font-size: 10vw;
+    padding-bottom: 4vw;
+  }
+  .sec9-cont > p {
+    font-size: 5vw;
+  }
+  .sec9-btm {
+    padding-top: 6vw;
+    gap: 5vw;
+  }
+  .sec9-btm1 > p {
+    font-size: 5vw;
+  }
+  .sec9-btm2 {
+    width: 11vw;
+    height: 11vw;
+  }
+  .sec9-btm2 > i {
+    font-size: 4vw;
+  }
 .footer-head{
-    padding: 4vw;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid white;
-    cursor: pointer;
+    flex-direction: column;
+    gap: 12vw;
+    padding: 15vw 4vw;
+}
+.footer-head>img{
+    width: 65vw;
 }
 .footer-head>h2{
-    font-size: 3vw;
-    color: white;
-    padding-right: 4vw;
+    font-size: 7vw;
+    font-weight: 500;
 }
-.fotter-btm{
-    display: flex;
-    justify-content: space-between;
-    padding: 4vw;
-    color: white;
-}
-.btm>p{
-    font-size: 1.2em;
-}
-.footer-icon{
-    padding-left: 5vw;
-    display: flex;
-    gap: 2vw;
-    cursor: pointer;
-}
-.footer-icon>i{
-    font-size: 2vw;
-    color: white;
+.fotter-btm {
+    flex-direction: column;
+    gap: 8vw;
+  }
+  .btm11>p:nth-of-type(1){
+    padding-top: 5vw;
+  }
+  .footer-icon{
+    padding-top: 7vw;
+    gap: 5vw;
+  }
+  .footer-icon>i{
+    font-size: 8vw;
+  }
 }

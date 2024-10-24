@@ -6,7 +6,7 @@ export default function App() {
   return (
     <>
       <Nav />
-      <Land/>
+      <Land />
       <Footer/>
     </>
   );
