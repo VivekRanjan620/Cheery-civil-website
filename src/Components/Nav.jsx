@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [toolbar, settoolbar] = useState(false);
@@ -33,7 +34,7 @@ function Nav() {
           {" "}
           <div className="overlay">
             <div className="overlay-right">
-              <h2>ABOUT US </h2>
+            <Link to="/about">ABOUT US</Link>
               <h2>PROJECTS</h2>
               <h2>CORPORATE SOCIAL RESPONSIBILITY</h2>
               <h2>INVEST IN US</h2>

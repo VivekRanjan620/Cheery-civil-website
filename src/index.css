@@ -64,12 +64,13 @@
   flex-basis: 70%;
 }
 
-.overlay-right > h2 {
-  line-height: 7vw;
+.overlay-right > h2 , .overlay-right > a{
+  line-height: 6vw;
   color: var(--fourth-color);
   font-size: 3vw;
   font-weight: 200;
   cursor: pointer;
+  text-decoration: none;
   transition: 0.5s ease-in-out;
 }
 
@@ -78,6 +79,7 @@
 }
 
 .overlay-right > h2:hover,
+.overlay-right > a:hover,
 .overlay-left > p:hover {
   color: var(--secondary-color);
 }
