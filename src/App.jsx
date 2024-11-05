@@ -6,8 +6,8 @@ import About from "./Components/About";
 export default function App() {
   return (
     <>
-      {/* <Land /> */}
-      <About />
+      <Land />
+      {/* <About /> */}
     </>
   );
 }
