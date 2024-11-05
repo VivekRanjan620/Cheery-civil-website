@@ -1,8 +1,11 @@
 import React from "react";
+import Nav from "./Nav";
+import Footer from "./Footer";
 
 function Land() {
   return (
     <>
+    <Nav/>
       <div className="main">
         <div className="sec1-L">
           <div className="sec1-cont">
@@ -189,6 +192,7 @@ function Land() {
           <div className="sec10-right"></div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

@@ -1,14 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --primary-color: #f9f7f5;
   --secondary-color: #b0774a;
   --third-color: #ccad95;
   --fourth-color: #6a6b6a;
   --border-color: rgba(128, 128, 128, 0.621);
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  --text-color: #2e3030;
 }
 
 .navbar {
